@@ -1,0 +1,201 @@
+<HTML>
+<HEAD>
+<TITLE>Software Engineering e-Archive</TITLE>
+<META NAME="description" CONTENT="Software Engineering Electronic Archive">
+<META NAME="keywords" CONTENT="eArchive">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+</HEAD>
+<BODY LANG="EN">
+<BR> <P>
+<P>
+<HR=2>
+<H2>Software Engineering</H2>
+
+<HR>
+<P>
+<B> Electronic Project Archive -- Iteration 2(c) --&nbsp; (<A
+HREF="syllabus.html#DELIVERABLES">due date given here</A>)</B>
+<HR>
+
+<h3>1. The e-Archive Format</h3>
+
+Each group should submit an <u>electronic medium</u> (no printouts
+accepted!) containing everything that is necessary to evaluate and run
+your software.  You can either bring a physical medium, such as CD-ROM
+or DVD disk, or post your ZIP file on your website and let us know
+where to download it.  The required contents are as follows:
+<ol>
+<li> <code>"README.txt"</code> file containing all file names and for
+     each file a brief description about the content of the file
+<li> <strong>PDF</strong> files containing the entire <A
+     HREF="report1.html">Report #1</A> and <A
+     HREF="report2.html">Report #2</A> as these were <em>originally
+     sumbitted</em>, <b>not</b> as modified as part of Report #3.
+<li> Microsoft PowerPoint file containing any <b>slides</b> you used
+     for your <A HREF="demo1.html">first demo</A> and those used for
+     the <A HREF="demo2.html">final demo</A>.
+<li> <strong>PDF</strong> file containing the entire <A
+     HREF="report3.html">Report #3</A> as in the printed version
+     submitted earlier.  The report should appear as a <b>single
+     file</b>. All UML diagrams that appear in the printed version of
+     Report #3 should be included in the electronic form.
+<li> Complete project source code (Java files, or other programming or
+     markup language, if such is used)
+<li> Images or button icons loaded by the program when run
+<li> Shell-scripts, CGI scripts, HTML files, and any and all other
+     files needed to run the program
+<li> Database tables and files or plain files containing example data
+     to run the program
+<li> Anything else that your program requires to be run? <br>
+     (<font size=-1>Do not include publicly available or commercial
+     software such as Java JDK packages or database software. We
+     should not need special commercial software to run your
+     software. </font>)
+</ol>
+
+Please store different information into different directories/folders.
+For example, your directory tree may look like this
+(<code>"README"</code> file is in the root folder):
+<br>&nbsp;
+<table BORDER CELLPADDING=10 COLS=1 >
+<tr>
+<td>
+<pre>
+    -
+    |
+    +-----> doc           // documentation plus Report #3, presentation slides, etc.
+    |
+    +-----> design        // UML diagrams
+    |
+    +--+--> code          // project code
+       |
+       +-------> java     // Java source code
+       |
+       +-------> classes  // compiled Java classes
+       |
+       +-------> images   // images and button icons
+       |
+       +-------> data     // (database) files with example data
+       |
+       +-------> run      // scripts and/or HTML files
+</pre>
+</td>
+</tr>
+</table>
+<p> Each source code file should have at the top information about
+the student who authored it or assisted in writing and debugging
+the code, something like:<br>
+<pre>
+  // written by:
+  // assisted by:
+  // debugged by:
+  // etc.
+</pre>
+The code will be compared with the diagrams in Report #3.  The class,
+attribute and method names should exactly match.  It is not necessary
+that these are consistent with Reports #1 & #2 since Report #3 revises
+and overrides the previous two.  However, it is critical that the
+final UML diagrams in Report #3 and the final code are consistent.
+
+<H3>2. Software Coding Standards</H3>
+
+The source code should be neat and well documented.  This is in your
+best interest so that all group members can seamlessly collaborate on
+the project.  Please refer to the following web site for Java coding
+standards guide: <A
+HREF="http://developer.netscape.com:80/docs/technote/java/codestyle.html">
+<tt>http://developer.netscape.com:80/docs/technote/java/codestyle.html</tt></A>
+
+
+<p>Another set of coding standards is given here:
+<A HREF="http://www.ambysoft.com/javaCodingStandards.html">
+<tt>http://www.ambysoft.com/javaCodingStandards.html</tt></A>
+
+<p>A major factor in grading will be how well the code corresponds to
+the UML diagrams.  The class names, operation names, and attribute
+names should exactly match. Put emphasis on consistency, neatness, and
+completeness.  For example, all exceptions should be properly handled.
+Do not just catch an exception with empty braces:
+<code>catch(Exception ex) { }</code>.
+
+<P> A good example of a software engineering project along with
+documentation and source code can be found here: <A
+HREF="http://www.caip.rutgers.edu/disciple/whiteboard/">
+<tt>http://www.caip.rutgers.edu/disciple/whiteboard/</tt></A>.
+
+
+<h3>3. Grading</h3>
+
+<P>Note that only <b>negative points</b> will be given if the
+eArchive/EPA is missing or poorly prepared.  <FONT
+COLOR="#ff0000"><b>The project e-Archive can reduce the overall grade
+by 10 % if missing or poorly prepared.</b></FONT> Email us the <A
+HREF="projects.html#CONTRIB">breakdown of individual contributions</A>
+immediately after submitting the eArchive.</P>
+
+<P>See also the <A HREF="projects.html#GRADING">grading policy</A> for
+the assigning the overall team grade vs. grades for the individual
+members.</P>
+
+<P>If submitting a physical medium, please make sure that the
+electronic media (CD-ROM or Zip disk or ...) is
+<b>not damaged</b> and can be read on a regular PC.</P>
+
+<P> The eArchives will be graded as follows:
+
+<TABLE BORDER>
+<TR><TD
+BGCOLOR="#CCFFFF"><CENTER>Aspect</CENTER></TD><TD BGCOLOR="#CCFFFF">Points</TD>
+</TR>
+<TR><TD>
+(1) Electronic version of any of the reports missing</TD><TD> <B>-3</B></TD>
+</TR>
+<TR><TD>
+(2) Electronic version of demo slides missing</TD><TD> <B> -1</B></TD>
+</TR>
+<TR><TD>
+(3) The recommended format for EPA not followed</TD><TD> <B>-1</B></TD>
+</TR>
+<TR><TD>
+<TR><TD>
+(4) Poor quality of code documentation<BR>
+&nbsp; &nbsp; &nbsp; a) Lack of correspondence between diagrams and code<BR>
+&nbsp; &nbsp; &nbsp; b) Poor code structure and readability<BR>
+&nbsp; &nbsp; &nbsp; c) Incomplete source code (e.g., missing files)<BR>
+&nbsp; &nbsp; &nbsp; d) Missing information about the student who<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; authored/assisted/debugged on top of each file </TD><TD> <B>-4</B> <BR>&nbsp; <BR>&nbsp; <BR>&nbsp; </TD>
+</TR>
+<TR><TD>
+(5) Inconsistency between the report printout and archive,<BR>
+&nbsp; &nbsp; &nbsp;checked in terms of module/class/attribute/operation
+names</TD><TD> <B>-1</B></TD>
+</TR>
+</TABLE>
+
+<P> Notice the grading focus on the correspondence between the diagrams
+and the quality of comments.
+<BR><BR>
+
+<H3>4. &nbsp; e-Archive Submission</H3>
+
+<P> If submitting a physical medium, each team should submit only
+<em>one e-Archive</em> to the TA.  Bring the e-Archive to the <A
+HREF="index.html#TA">TA's office</A> on or before the due date.  If
+you posted the ZIP file online, email us where to find it. Make sure
+to email us the <A HREF="projects.html#CONTRIB">breakdown of
+individual contributions</A> immediately after submitting the
+eArchive. </P>
+
+<P>Submission deadline: <B>5:00 p.m. on the due date</B>.
+
+<p><strong>The project report materials will not be returned, so make
+sure to keep your own copy of the e-Archive.</strong>
+
+<HR>
+<P><ADDRESS>
+<I>Ivan Marsic <BR>
+Fri Mar 11 16:27:00 EST 2005</I>
+</ADDRESS>
+</BODY>
+</HTML>

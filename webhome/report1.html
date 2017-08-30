@@ -1,0 +1,514 @@
+<HTML>
+<HEAD>
+  <TITLE>Software Engineering Report #1</TITLE>
+  <META NAME="author" CONTENT="Ivan Marsic">
+  <META NAME="Subject" CONTENT="software engineering textbook, project
+    report, requirements analysis">
+  <META NAME="description" CONTENT="software engineering report,
+    requirements analysis document">
+  <META NAME="keywords" CONTENT="software engineering report, system
+    specification, requirements engineering, use cases, OOA, domain
+    model, object-oriented software development, OpenCourseWare">
+  <META NAME="resource-type" CONTENT="document">
+  <META NAME="distribution" CONTENT="global">
+</HEAD>
+<BODY LANG="EN">
+<BR> <P>
+<P>
+<HR=2>
+<H2>Software Engineering</H2>
+<HR>
+<P>
+<B> Report #1: SYSTEM SPECIFICATION &#151; Iteration 1(a) &#151;&nbsp; (<A
+HREF="syllabus.html#DELIVERABLES">due date given here</A>)
+</B></P>
+<HR>
+
+This document is also known as <em>Requirements Analysis Document</em>
+(RAD).
+
+<P> <b>Note</b>: Keep this report for future reference since it will
+become part of the final report (<A HREF="report3.html">Report
+#3</A>).  Thus, as you progress through the semester, take every
+opportunity to revise, update and/or correct it.</P>
+
+<H3>1. &nbsp; Report Format</H3>
+
+<P> The report must contain the following section.  Each section
+should be clearly delineated, with its own heading and pagination.
+The sections should be numbered as below, to facilitate the grading
+process.
+<ol>
+<li> Cover Page and Individual Contributions Breakdown, as specified <A
+HREF="projects.html#REPORTS"><b>here</b></A>.<BR> <FONT SIZE=-1>The
+contributions breakdown must contain the <em>responsibility
+matrix</em> and <em>responsibility allocation chart</em> as described
+in <a href="#EFFORT">Section 2 below</a></FONT></li>
+<li>Table of Contents<BR> <FONT SIZE=-1>Make sure that the page
+numbers listed here are correct</FONT></li>
+<li> Customer Statement of Requirements<BR> <FONT SIZE=-1>A minimum
+3-page high-level narrative about the project (see below). <BR>
+ This could be copied from your project <A
+ HREF="proposal.html">proposal</A>, revised and improved as necessary,
+ OR <BR>
+If you&#146;re working on one of the projects given in Section 1.5 of
+<A HREF="../../books/SE/"><b>class lecture
+notes</b></A>, then summarize and rephrase the description given
+therein.<BR> Enumerate all the <b>requirements</b> at the end of this
+section. </FONT> 
+<li> Glossary of Terms<BR> <FONT SIZE=-1>List important terms and
+their definitions to ensure consistency and avoid ambiguity in the
+system specification. Use the language of the application domain and
+avoid uncommon terms or define these as well.</FONT>
+<li> Functional Requirements Specification
+ <ol type="a">
+ <li> Stakeholders<BR> <FONT SIZE=-1> Identify anyone and everyone who
+ has interest in this system (users, managers, sponsors, etc.).</FONT>
+ <li> Actors and Goals<BR> <FONT SIZE=-1> Identify who will directly
+ interact with the system, their <em>types</em>
+ (initiating vs. participating) and the <em>goals</em> of the
+ initiating actors.</FONT>
+ <li> Use Cases
+  <ol type="i">
+  <li> Casual Description<BR> <FONT SIZE=-1>For <b>all</b> use cases
+  that you plan to have in the final product, write a <em>brief</em> or
+  <em>casual</em> text description.</FONT>
+  <li> Fully-Dressed Description<BR> <FONT SIZE=-1>Select a <b>few
+  most important</b> use cases (those that you plan to have
+  implemented by the time of the <A HREF="demo1.html">first demo</A>)
+  and provide <em>fully dressed</em> description.</FONT>
+  <li> Use Case Diagram<BR> <FONT SIZE=-1>Draw the use case diagram
+  with all the use cases.</FONT></li>
+  <li>System Requirements - Use Case Traceability Matrix<BR> <FONT
+  SIZE=-1>(<a
+  href="http://www.google.com/search?hl=en&q=requirement+use+case+traceability+matrix">search the Web</a>)</FONT>
+  </li>
+  </ol>
+ <li> System Sequence Diagrams<BR> <FONT SIZE=-1>Draw the system
+ sequence diagrams for the <b>few most important</b> use cases
+ selected above</FONT>
+ </ol>
+ <li> Nonfunctional Requirements <BR> <FONT SIZE=-1>List and describe
+ the <a href="http://en.wikipedia.org/wiki/Furps">FURPS+
+ requirements</a> &nbsp; (also check <a href="http://www.upedu.org/upedu/process/gcncpt/co_req.htm">Concepts:
+ Requirements</a>).</FONT>
+<li> Domain Analysis
+ <ol type="a">
+ <li> Domain Model<BR> <FONT SIZE=-1>Draw the domain model and provide
+ three tables with:
+  <ol type="i">
+  <li> Concept definitions
+  <li> Association definitions
+  <li> Attribute definitions
+  </ol></FONT>
+ <li> System Operation Contracts<BR> <FONT SIZE=-1>Should be provided
+ only for the operations of the few use cases elaborated above.</FONT>
+<li> Mathematical Model <br> <FONT SIZE=-1>Do you use any
+     mathematical models?  E.g., you may use a statistical model for
+     stock price prediction, or a geometric model for computing the
+     trajectories for animate figures in a game. <BR> If NO, skip to
+     the next item; <BR>
+     If YES, describe precisely your model.</FONT> </li>
+ </ol>
+<li> User Interface Design <BR>
+  <FONT SIZE=-1>If your system prints some forms or generates periodic
+  reports, this is also considered part of the user interface and the
+  format of forms/reports must be specified in this section.</FONT>
+  <ol type="a">
+  <li> Preliminary Design<BR><FONT SIZE=-1>Describe <em>navigational
+  paths</em> that user will follow when interacting with the system.
+  Show the <em>screen mock-ups</em> that the user will see and what
+  parameters they&#146;ll need to enter.</FONT></li>
+  <li>User Effort Estimation<BR> <FONT SIZE=-1>Select several typical
+  usage scenarios and, as you walk through the flow of events, count
+  and report the number of mouse clicks and/or keystrokes that are
+  needed to accomplish the task.  What fraction of these goes to
+  user-interface navigation vs. clerical data entry?<BR>
+  <a href="report1-appA.html"><b>See example here</b></a> (Appendix A)
+  </FONT></li>
+  </ol>
+<li> Plan of Work<BR> <FONT SIZE=-1>Describe what your group is
+ planning to do after submitting report#1 until the end of the
+ semester. List the projected milestones and dates by which you plan
+ to accomplish them.  Of course, your plans for the next few weeks
+ should be much more detailed than for the April/May period.<BR>
+ Preferably, you should use <a href="http://www.ganttchart.com/">Gantt
+ charts</a> for planning and scheduling your project.
+ (Rutgers students can download <em>Microsoft Project</em> at the <a
+ href="https://software.rutgers.edu/">University Software Portal</a>.)<BR>
+ Also provide the</FONT> breakdown of responsibilities<FONT SIZE=-1>:
+ what each team member did so far, is currently doing, will do in the
+ future.</FONT></li>
+</li>
+<li> References<BR> <FONT SIZE=-1>The list of references should
+contain exact <em>references and URLs</em> of any material that is
+used in the project and doesn&#146;t come from the textbook. Each
+reference should be cited in the main text; otherwise, it should
+<b>not</b> appear in the list of references.</FONT> </li>
+</ol>
+
+<P>A minimum 3-page <b>customer statement of requirements</b> is
+required, see item #3 above. This should describe <i>informally,
+without the use-case jargon</i>, motivation for your project, what
+kind of problem you are solving, and how this problem is solved in the
+current practice (before your proposed system gets deployed).  Use the
+application domain language and terminology, i.e., the language
+familiar to your target users, and avoid technical jargon.  Utilize
+charts, illustrations, and screen mock-ups to make it easier for the
+reader to understand the problem.  Provide references (books, papers,
+websites) where to find more information or see existing solutions.
+Examples are given in Section 1.5 of <A
+HREF="../../books/SE/"><b>class lecture notes</b></A>.<BR>
+Enumerate all the <b>requirements</b> at the end of this
+section. Each requirement should briefly state what the user should
+be able to do using the system or what the system should do
+automatically, e.g., at periodic intervals.
+
+<P>Also see Appendix A: <a href="report1-appA.html"><em>User Effort Estimation</em></a></P>
+
+<P> <em>There is <b>no limit</b> on the number of pages for the
+report.</em> Of course, you should avoid stuffing your report with
+redundant or irrelevant material.  The report must be
+<b>self-contained</b>; the grader should not need to read any other
+material to read and understand the report.  You should provide as
+much details as possible (particularly in the use case scenarios and
+the domain model), but these are <em>business</em> details, i.e., how
+the user typically interacts with the system to obtain the
+service. You should <em>not</em> go into <em>software</em> details of
+how you plan to build this system.
+(The latter will be part of <A HREF="report2.html">Report #2</A>.)<BR>
+Brevity is good because it will be easier for you to create a
+professionally looking technical report&#151;it is easier to
+<em>maintain consistency, clarity, and readability</em> for shorter
+reports.
+Check also: <a
+href="http://blogs.techrepublic.com.com/10things/?p=525">10+ ways
+to reduce wordiness in your writing (TechRepublic)</a>&#151;when you
+streamline your wording, your message becomes more powerful and clear.
+</P>
+
+<P> Do not just show the UML diagrams&#151;provide some
+<b>narrative</b>!  Unfortunately, diagrams, particularly technical
+diagrams, are rarely if ever self-explanatory.  You should document
+the alternative solutions that you considered as well as the arguments
+for the final choice.  Diagrams only represent your final solution,
+but do not explain why you decided on this solutions and what
+alternatives were considered.  Hence, <b>all</b> diagrams must be
+accompanied with explanation and discussion of alternatives and
+tradeoffs.  Anything that could lead to ambiguity or misunderstanding
+on the reviewer&#146;s part, should be clearly explained.
+Explanations should be written in prose and key arguments highlighted
+in bullet points.  Use the terminology from the textbook and the
+lecture notes&#151;this is important so to facilitate the report
+grading and reassure the grader that you are studying the textbook and
+you understand it.</P>
+
+<P>
+The phrase &#147;few-most-important-use-cases&#148; used above is not
+meant to discourage you from documenting all the use cases in full
+detail.  If you have enough time to do it all&#151;go for it!  But, be
+carefull not to get overextended and end up not being able to meet the
+deadline.  Remember, in the spirit of <a
+href="http://en.wikipedia.org/wiki/Agile_software_development">agile
+methods</a>:
+<B>Do the best you can in the time available and hand in your report
+<em>on time</em>.</B></P>
+
+<P>
+The above list gives only the main required items for this project
+report.  It is absolutely necessary that you read and understand the
+relevant materials in the <A
+HREF="../../books/SE/"><b>class lecture
+notes</b></A> in order to be able to prepare a good project
+report. Check also <a
+href="http://en.wikipedia.org/wiki/Software_requirements_analysis">Requirements
+analysis @ Wikipedia</a>.<BR>
+Also, <em>IEEE Recommended Practice for Software Requirements
+Specifications</em> contains (in the appendix) several sample outlines
+for the description of specific requirements: <a
+href="http://standards.ieee.org/catalog/olis/arch_se.html"> IEEE Std
+830-1993</a> (Superseded by IEEE Std 828-1998).<BR>
+Check also the new <em>IEEE Recommended Practice for Software
+Requirements Specifications</em>: <a
+href="http://www.ecet.vtc.edu/~scolwell/cis4150/IEEE_Std_830-1998.pdf">
+IEEE Std 830-1998 (Revision of IEEE Std 830-1993)</a></P>
+
+<A NAME="EFFORT">
+<H3>2. &nbsp; Effort Breakdown</H3>
+</A>
+
+<p>All teams must include in their reports a table showing effort
+breakdown.  This activity has two purposes:
+<ol>
+<li>Help team members distribute the project responsibilities
+equitably</li>
+<li>Help instructor grade individual contributions fairly</li>
+</ol>
+
+The effort-breakdown table format for this report is as
+follows. Assume that the team has five members and, for the sake of
+illustration, their individual responsibilities are agreed to be as
+shown in this <b>responsibility matrix</b>:
+
+<table border>
+<tr><td rowspan="2" colspan="2">
+<font size=-1><b>Note:</b> See point allocations in the <a
+href="#GRADING">table below</a>.</font>
+</td><td colspan="5" bgcolor="#CCFFFF"><center><b>Team Member
+Name</b></center></td></tr>
+<tr><td>Member 1</td><td>Member 2</td><td>Member 3</td><td>Member
+4</td><td>Member 5</td></tr>
+<tr><td rowspan="9" bgcolor="#CCFFFF"><b>Res<br> pon<br> sibi<br>
+lity<br><br>lev<br> els</b></td>
+<td>Project management<br> (<em>10 points</em>)</td><td>70
+%</td><td>&nbsp;</td><td>20 
+%</td><td>&nbsp;</td><td>10 %</td>
+</tr>
+<tr><td>Sec.3: Customer Statement of Requirements<br> (<em>6
+points</em>)</td><td>50 
+%</td><td>&nbsp;</td><td>&nbsp;</td><td>20 %</td><td>30 %</td>
+</tr>
+<tr><td>Sec.4: Glossary of Terms<br> (<em>4
+points</em>)</td><td>&nbsp;</td><td>100 
+%</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr><td>Sec.5: Functional Requirements Specification<br> (<em>37 
+points</em>)</td><td>&nbsp;</td><td>60 %</td><td>10 %</td><td>10
+%</td><td>20 %</td>
+</tr>
+<tr><td>Sec.6: Nonfunctional Requirements<br> (<em>6 
+points</em>)</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>100
+%</td><td>&nbsp;</td>
+</tr>
+<tr><td>Sec.7: Domain Analysis<br>
+(<em>25points</em>)</td><td>&nbsp;</td><td>&nbsp;</td><td>20 
+%</td><td>80 %</td><td>&nbsp;</td>
+</tr>
+<tr><td>Sec.8: User Interface Design<br> (<em>8 
+points</em>)</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>100
+%</td>
+</tr>
+<tr><td>Sec.9: Plan of Work<br> (<em>3 points</em>)</td><td>100 
+%</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr><td>Sec.10: References<br> (<em>1 point</em>)</td><td>100 
+%</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+</table>
+
+<b>Note:</b> You may wish to have additional rows in the
+responsibility matrix for all sub-sections of Sections 5 and 7 of the
+report.  This will give you more accurate view of responsibility
+allocation.
+
+<p>The values in each row must add up to 100 %.  The values in each
+column will give us the responsibility levels for individual team
+members, as follows.  If we multiply the percentages for individual
+team members with total number of points, we will know how many points
+each member can potentially earn. For instance, <em>Member 1</em> in
+the above example can earn a maximum of:
+
+<center>
+0.7 &#215; 10 points + 0.5 &#215; 6 points + 1.0 &#215; 3 points + 1.0
+&#215; 1 point = 14 points
+</center>
+By repeating the same calculation for all team members, we will obtain
+the following chart of <b>responsibility allocation</b> across the
+team:<br>
+( <em>Member 2</em>: 1.0 &#215; 4 + 0.6 &#215; 37 = 26.2 points <br>
+&nbsp; <em>Member 3</em>: 0.2 &#215; 10 + 0.1 &#215; 37 + 0.2 &#215;
+25 = 10.7 points <br>
+&nbsp; <em>Member 4</em>: 0.2 &#215; 6 + 0.1 &#215; 37 + 1.0 &#215; 6
++ 0.8 &#215; 25 = 30.9 points <br>
+&nbsp; <em>Member 5</em>: 0.1 &#215; 10 + 0.3 &#215; 6 + 0.2 &#215; 37
++ 1.0 &#215; 8 = 18.2 points )
+
+<center><img src="responsibilities.jpg" alt="responsibility allocation
+chart"></center>
+
+<p>From this chart, we can easily see that the responsibility
+allocation in the example scenario is not well balanced across the
+team members.  Ideally, all members should take on approximately
+equal level of responsibility.  Hence, in the above scenario, Members 1
+and 3 should take on greater responsibility levels and Members 2 and 4
+should reduce their responsibility levels.</p>
+
+<A NAME="PREPARATION">
+<H3>3. &nbsp; Report Preparation</H3>
+</A>
+
+<P> The report should be prepared on computer (special negative points
+for handwriting and hand-drawn figures).  Using a software tool is
+<b>mandatory</b> for producing this report.  Hand-drawn diagrams are
+not acceptable.  Read the supplementary textbook ( Miles & Hamilton:
+<em>Learning UML 2.0</em> ) for details on UML notation.  Here are
+some options for software tools that support UML design:
+
+<ul>
+<li>Omondo EclipseUML <A HREF="http://www.omondo.com/">
+<code>http://www.omondo.com/</code></A> (Academic License available
+for free)<BR> works with Eclipse <A HREF="http://www.eclipse.org/">
+<code>http://www.eclipse.org/</code></A><BR> Note: This tool is also
+installed in EIT Lab (D-110) </li>
+
+<li> ArgoUML <A HREF="http://argouml.tigris.org/">
+<code>http://argouml.tigris.org/</code></A><br> see also <a
+href="http://en.wikipedia.org/wiki/ArgoUML">ArgoUML @ Wikipedia</a>.
+</li>
+
+<li> Rational Rose <A HREF="http://www.rational.com/tryit/index.jsp">
+<code> http://www.rational.com/tryit/index.jsp</code></A> </li>
+
+<li> <A HREF="http://www.microgold.com/">
+<code>http://www.microgold.com/</code></A> </li>
+</ul>
+
+You can search the web and find some other tool as well.
+<em>Microsoft Visio</em> also supports UML symbology.  (Rutgers
+students can download <em>Visio</em> at the <a
+href="https://software.rutgers.edu/">University Software Portal</a>.)
+Any tool that supports UML symbology is acceptable.</P>
+
+
+<H3>4. &nbsp; When To Start Coding</H3>
+
+<p>You should start implementing at least some functions of your
+system <b>immediately</b>.  This code will help you to better specify
+and design your system.  You should not wait until after submitting
+Report #2 to start with coding&#151;the <A HREF="demo1.html">first
+demo</A> is not that far away!<BR>
+Check about the <a href="projects.html#RESOURCES"><b>departmental
+resources here</b></a>.
+
+<p>A note about <em><b>mock up screens</b> for the user
+interface</em>.<BR> Keep in mind that you do not need to program in a
+programming language in order to start generating mock up screens for
+your system.  The idea of mock up screens is that you generate them in
+PowerPoint or another graphics editor, not in a programming
+language. </P>
+
+<p>However, <em>do not report about the pilot implementations in this
+report.</em>  The first time we expect you to report about the
+implementation is in the <A HREF="demo1.html">first demo</A>.
+
+
+<A NAME="GRADING">
+<H3>5. &nbsp; Grading</H3>
+</A>
+
+<P>See also the <A HREF="projects.html#GRADING">grading policy</A> for
+the assigning the overall team grade vs. grades for the individual
+members.</p>
+
+<p>The reports will be graded as follows: <br>
+(NOTE: Check also the <A HREF="report1_grading.pdf"><b>actual
+grading sheet</b></A>.)</p>
+
+<TABLE BORDER>
+<TR><TD
+BGCOLOR="#CCFFFF" ROWSPAN="2">Aspect</TD><TD
+ROWSPAN="2">Cust.<br>req.<br>stat.</TD> <TD ROWSPAN="2">Glos<br> sary</TD>
+<TD COLSPAN="6"> <CENTER>Requirements Specification</CENTER> </TD>
+<TD ROWSPAN="2">Sys.<br> seq.<br> diag</TD>
+<TD ROWSPAN="2">Nonfct.<br>req'ts<br>FURPS+</TD> <TD COLSPAN="3">
+<CENTER>Domain Model<br> (incl. <em>description</em>!)</CENTER> </TD><TD ROWSPAN="2">Cont<br> racts</TD>
+<TD ROWSPAN="2">User<br> i'face</TD><TD ROWSPAN="2">Plan<br>of<br>wrk</TD><TD
+ROWSPAN="2">Ref's</TD><TD ROWSPAN="2">Extra<br>effort</TD>
+</TR>
+<TR><TD>Stake<br>hold.</TD><TD>Actors</TD><TD>Goals</TD><TD>Use c.<br>casual<br>
+descr.</TD><TD>Use c<br>full<br> descr.</TD><TD>Use<br> case<br>
+diag</TD>
+<TD>Conc<br> epts</TD><TD>Assoc</TD><TD>Attrib</TD>
+</TR>
+<TR><TD
+BGCOLOR="#CCFFFF">Points</TD><TD> 6 </TD><TD> 4 </TD>
+<TD> 2 </TD><TD> 2 </TD><TD> 4 </TD><TD> 5 </TD><TD> 11 </TD><TD> 4
+</TD><TD> 9 </TD><TD> 6 </TD><TD> 12 </TD><TD> 4 </TD><TD> 3
+</TD><TD> 6 </TD><TD> 8 </TD><TD> 3 </TD><TD> 1 </TD> <TD> 10 </TD>
+</TR>
+<TR><TD
+BGCOLOR="#CCFFFF">Total<br> points</TD><TD COLSPAN="18">
+&nbsp;&nbsp;&nbsp;&nbsp; 100 </TD>
+</TR>
+</TABLE>
+
+<A NAME="EXTRA_EFFORT">
+<P> <b>IMPORTANT NOTE:</b>
+</A>
+It is not enough only to meet the listed requirements to receive the
+maximum grade. For example, having a perfect report for a trivial
+project will result in a very low overall grade.  Thus, the overall
+quality and functionality of the project is the key scaling factor for
+all other aspects of the grade. </P>
+
+<P> The &#147;<b>extra effort</b>&#148; part of the grade is hard to
+quantify; it is essentially what you do more than the minimum required
+above&#151;how far you go &#147;beyond the call of duty.&#148; It also
+includes the general appearance of the report and the overall
+impression about the envisioned product and your creativity and
+current progress.  Some indications of how extra points will be
+assigned are given in the <A HREF="report1_grading.pdf">actual grading
+sheet</A>.  You should demonstrate extra effort to receive 100% the
+total score for this report. </P>
+
+<P> These are key ingredients of a successful report:
+<ul>
+
+<li> Your project should appear as sufficiently <b>ambitious</b> for a
+semester of work by a team of soon-to-graduate engineering students.
+It should not leave impression that this can be done by a single
+person, or within a much shorter time.
+<ul>
+<li>Don&#146;t worry if you don&#146;t have many actors or many use
+cases. The complexity of the project is judged <em>as a whole</em>,
+not only by the number of actors and/or use cases.</li>
+</ul>
+</li></p>
+
+<li> The report should demonstrate your <b>creativity, knowledge, and
+skill</b> in identifying and solving technical problems.</li></p>
+
+<li> <b>Consistency, clarity, and correctness</b> of the report are
+critical.  The report must be <b>complete</b>, in the sense that it is
+<em>self-contained</em> and the reader doesn&#146;t need other
+materials to understand it. Anticipate what could be confusing to
+reviewers and clarify every possible source of ambiguity or
+inconsistency.  Make sure that <b>all team members carefully read the
+entire report</b> and understand its contents completely and
+clearly. </li></p>
+
+<li> The report should have <b>professional appearance</b>; make sure
+that it is neat, easy to read and understand, with clearly labeled
+section headings, figure captions, pagination, and without gramatical
+and typographical errors. Also, check that diagrams and images are
+<em>readable when printed</em> (i.e., letters or symbols are not to
+small and illegible).  If you are using colors in images and diagrams,
+check that they are discernable when printed in
+black-and-white/grayscale. Every figure/table must be referenced in
+the text and properly described.
+
+</ul></p>
+
+<H3>6. &nbsp; Report Submission</H3>
+
+<P> Each team should submit only <em>one report</em> to the TA.  Email
+a <b>PDF document</b> of the report both to the instructor
+<em>and</em> the <A HREF="index.html#TA">TA</A> on or before the due
+date. Also, the report should be posted for download on your project
+website. </P>
+
+<P>Submission deadline: <B>5:00 p.m. on the <A
+HREF="syllabus.html#DELIVERABLES">due date</A></B>. </P>
+
+<HR> <P><A HREF="index.html"><IMG
+SRC="../../Icons/home_icon.gif" HEIGHT=32 WIDTH=32 ALIGN=CENTER></A><A
+HREF="index.html">Back to the course
+home page</A></P>
+
+<P><ADDRESS>
+<I>Ivan Marsic <BR>
+Thu Apr 26 13:55:40 EDT 2007 </I>
+<!-- Mon Jan 31 13:16:04 EST 2005 -->
+</ADDRESS>
+</BODY>
+</HTML>

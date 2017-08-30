@@ -1,0 +1,348 @@
+<HTML>
+<HEAD>
+<TITLE>Software Engineering Report #2</TITLE>
+<META NAME="description" CONTENT="Software Engineering Report #2">
+<META NAME="keywords" CONTENT="report2">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+</HEAD>
+<BODY LANG="EN">
+<BR> <P>
+<P>
+<HR=2>
+<H2>Software Engineering</H2>
+<HR>
+<P>
+<B> Report #2: SYSTEM DESIGN -- Iteration 1(b) --&nbsp; (<A
+HREF="syllabus.html#DELIVERABLES">due date given here</A>)</B>
+<HR>
+
+
+<P> <b>Note</b>: Keep this report for future reference since it will
+be part of the final report (<A HREF="report3.html">Report #3</A>).
+Thus, as you progress through the semester, take every opportunity to
+revise, update and/or correct it.</P>
+
+<H3>1. &nbsp; Report Format</H3>
+
+<P> The report must contain the following sections and sub-sections.
+Each section/subsection should be clearly delineated with a proper
+heading.
+
+<ol>
+<li> Cover Page and Individual Contributions Breakdown, as specified <A
+HREF="projects.html#REPORTS"><b>here</b></A>.<BR> <FONT SIZE=-1>The
+contributions breakdown must contain the <em>responsibility
+matrix</em> and <em>responsibility allocation chart</em> as described
+in <a href="report1.html#EFFORT">Report #1</a></FONT></li>
+<li>Table of Contents<BR> <FONT SIZE=-1>Make sure that the page
+numbers listed here are correct</FONT></li>
+<li> Interaction Diagrams
+ <FONT SIZE=-1>
+ <ul>
+ <li> Do interaction diagrams for the use cases you elaborated (fully
+ described) in <A HREF="report1.html">Report #1</A> </li> <li> Mention
+ explicitly what design principles you employ in the process of
+ assigning responsibilities to objects.  This can be done either as
+ comment &#147;bubbles&#148; in the diagram, or in the caption of the
+ diagram. <BR> Read the <a href="index.html#TEXTBOOK">UML textbook</a>
+ about interaction diagrams and Section 2.4.1 in the <A
+ HREF="../../books/SE/"><b>course lecture notes</b></A>, in order to
+ learn about good design principles </li>
+ </ul></FONT>
+<li> Class Diagram and Interface Specification
+ <ol type="a">
+ <li> Class Diagram<br> <FONT SIZE=-1>
+   Show all classes and their associations.  Only indicate
+   visibilities of attributes and operations; full details about the
+   types and signatures should be provided in the next item.<BR>
+   If you cannot fit the class diagram on one page, or it looks too
+   cluttered, I suggest you create one overall class diagram showing
+   all classes and their relationships, but don't show any class
+   details (attributes and operations).
+   Then you show all the details as part of the next item.</FONT></li>
+ <li> Data Types and Operation Signatures<br> <FONT SIZE=-1>
+   Independently of the class diagram, write down class specification
+   in UML notation. For every class, specify data types of all
+   attributes and operation signatures</FONT></li>
+ </ol> </li>
+<li>System Architecture and System Design
+ <ol type="a">
+ <li> Architectural Styles <br> <FONT SIZE=-1>Describe the
+     <a
+     href="http://en.wikipedia.org/wiki/Software_architecture#Examples_of_Architectural_Styles_.2F_Patterns">architectural styles</a> used in your design &nbsp; (Google search <a href="http://www.google.com/search?hl=en&q=software+architectural+styles+example&aq=0&oq=software+Architectural+Styles">software architectural styles example</a>) </FONT> </li>
+ <li> Identifying Subsystems <br> <FONT SIZE=-1>Draw and describe
+     <b>UML package diagram</b> of subsystems in your system (See
+     the <a href="index.html#TEXTBOOK">UML textbook</a>)</FONT>
+     </li>
+ <li> Mapping Subsystems to Hardware <br> <FONT
+     SIZE=-1>Does you system need to run on multiple computers?  For
+     example, you may have client (web browser) and 
+     server (web server) processes, running on different machines.
+      <BR>  If NO, skip to the next item; <BR>
+     If YES, what modules run on which machine?
+     E.g., if you use handheld computers, what
+     runs on the handheld and what runs on a base station?)
+     </FONT> </li>
+ <li> Persistent Data Storage <br> <FONT SIZE=-1>Does your system need
+     to save data that need to outlive a single execution of the
+     system? <BR>
+     If NO, skip to the next item; <BR>
+     If YES, identify the persistent objects and select the storage
+     management strategy, e.g., flat files, relational database, etc. <br>
+     Attach the description of the file format and/or database
+     <b>database schema</b> (format of database tables)</FONT> </li>
+ <li> Network Protocol <br> <FONT SIZE=-1>
+     If your runs on a single machine, this question probably does
+     NOT apply;  skip to the next item; <BR>
+     Otherwise, which communication protocol do you use,
+     e.g., plain Java sockets, Java RMI, Java JDBC, HTTP, etc.
+     Explain why you made your specific choice. <br>
+     If you are using plain sockets, attach the description of the
+     communication protocol (types of messages, message format,
+     etc.). </FONT> </li>
+ <li> Global Control Flow <br> <FONT SIZE=-1>
+  <ul>
+  <li> <em>Execution orderness</em>: Is your system
+     <em>procedure-driven</em> and executes in a "linear" fashion,
+     where every user every time has to go through the same steps, or
+     is it an <em>event-driven</em> system that waits in a loop for
+     events, and every user can generate the actions in a different order?
+  <li> <em>Time dependency</em>: Is there any timers in your system? <br>
+     Is your system of event-response type, with no concern for real
+     time, or is it a real-time system?  If it's real-time, is it
+     periodic, and what are the time constraints for each
+     period? </li>
+ <li> <em>Concurrency</em>: Does your system use multiple
+     threads? <BR>  If NO, skip to the next item; <BR>
+     If YES, identify the objects that have separate threads of
+     control and describe any synchronization between the
+     threads? </li>
+  </ul> </FONT>
+<li> Hardware Requirements <br> <FONT SIZE=-1>What system does
+     resources your system depend upon?  Examples are, screen
+     display, disk storage, communication network, or you may be
+     accessing some special sensor/instrument. <br>
+     Describe exact requirements for these resources in order
+     for your system to run.  For example, you need color display,
+     with minimum resolution of 640 &#215; 480 pixels; minimum of 2
+     Gbytes hard disk space; minimum network bandwidth 56
+     Kbps. </FONT> </li>
+ </ol>
+</li>
+<li> Algorithms and Data Structures
+<ol type="a">
+ <li> Algorithms <br> <FONT SIZE=-1>Does your system use any
+     complex algorithms?  For example, when computing a motion
+     trajectory for an animate figure in a game, you may use some
+     numerical or computer-graphics algorithms.  Or, when assessing
+     stock market movements, you may be using statistical
+     algorithms. <BR>  If NO, skip to the next item; <BR>
+     If YES, describe your algorithms.  For example, for the animate
+     figure example above, will the path coordinates be precomputed
+     and stored in a look-up table or will they be computed using a
+     spline interpolation algorithm. <br>
+     It's a good idea to use <em>activity diagrams</em> to describe
+     the algorithm design.</FONT> </li>
+<li> Data Structures <br> <FONT SIZE=-1>Does your system use any
+     complex data structures, such as arrays, linked lists, hash
+     tables, or trees? <BR>  If NO, skip to the next item; <BR>
+     If YES, what criteria you used in deciding what data
+     structure to use, e.g., performance vs. flexibility?</FONT> </li>
+ </ol>
+</li>
+<li> User Interface Design and Implementation<FONT SIZE=-1>
+ <ul>
+ <li> Describe whether and how you modified and <em>implemented</em>
+      the initial screen mock-ups developed for <A
+      HREF="report1.html">Report #1</A>. Comment only on significant
+      changes in your user interface, those that reduce (or increase)
+      the <A HREF="report1-appA.html">user effort</A>. Changes of
+      colors or styles are less important and should be omittted from
+      your report.</li>
+ <li> The textbook does not deal much with the GUI design.
+      Excellent guidelines for GUI design can be found here: <br>
+      Sun Microsystems, Inc. <i>Java Look and Feel Design
+      Guidelines</i>. Mountain View, CA, 1999. Available at: <a
+      href="http://java.sun.com/products/jlf/ed2/book/">http://java.sun.com/products/jlf/ed2/book/</a> </li>
+ <li> "Ease-of-use" is generally considered the key characteristic
+      of user interface. "Ease-of-use" should not be confused with a
+      flashy interface, with lots of colors, picture, graphics,
+      etc. On the contrary, you should avoid flashy user
+      interfaces. "Ease-of-use" means that interface is intuitive,
+      easy to understand and operate, without having to ask many
+      questions or read voluminous documentation. A minimal user
+      interface that is well organized should be sufficient.  You
+      already considered the user effort as part of <A
+      HREF="report1.html">Report #1</A>, and here you should strive
+      to minimize the user effort, thus maximizing the
+      "ease-of-use".</li>
+ </ul></FONT> </li>
+<li> Progress Report and Plan of Work
+ <ol type="a">
+ <li> Progress Report<BR> <FONT SIZE=-1>What use cases have been
+ implemented? <BR> 
+ What is already functional, what is currently being tackled?
+ </FONT></li>
+<li> Plan of Work<BR> <FONT SIZE=-1>List the projected milestones and
+ dates by which you plan to accomplish them.  Preferably, you should
+ use <a href="http://www.ganttchart.com/">Gantt charts</a> for
+ planning and scheduling your project.</FONT>
+</li>
+<li> Breakdown of Responsibilities<FONT SIZE=-1>
+ <ul>
+ <li> List the names of modules and classes that each team member is
+ currently responsible for developing, coding, and testing </li>
+ <li> Who will coordiante the integration? </li>
+ <li> Who will perform the testing of the integrated system? </li>
+ </ul> </FONT></li>
+</ol> </li>
+<li> References<BR> <FONT SIZE=-1>The list of references should
+contain exact <em>references and URLs</em> of any material that is
+used in the project and doesn't come from the textbook.</FONT> </li>
+</ol>
+
+<P><B>NOTE:</B> No matter what programming language (Java or something
+else) you use to implement your software, <em>you must provide design
+diagrams (interaction diagrams) in UML</em>. Those diagrams <b>must
+correspond</b> with the implemenation source code, and this will be
+checked when with <A HREF="report3.html">Report #3</A> you submit the
+source code, too. This means that the class, method, and variable
+names should be the same in the code and in the UML diagrams. Also,
+the methods n the source code must be called in the order indicated in
+the UML diagrams. See Chapter 2 in the textbook and Miles & Hamilton:
+<em>Learning UML 2.0</em> for the how to create interaction diagrams.
+<BR> Source code should <em>not</em> be submitted with this report.
+
+<P><B>NOTE:</B> <em>Comment your diagrams!</em> Describe all design
+decisions and other things that are not obvious from the diagrams.
+Any useful information is welcome.  There is no limit on the number of
+pages for the report.  Having good comments and explanations greatly
+helps in reading and evaluating the project and will positively
+contribute to your grade.</P>
+
+<P><em>Updating Use Cases From Report#1</em>. The use case diagrams
+would presumably remain the same from the previous report on object
+oriented-analysis (<A HREF="report1.html">Report #1</A>), at least for
+now, so no need to repeat any material from that report.  If any
+changes are made, these should be documented in <A
+HREF="report3.html">Report #3</A>.</P>
+
+<P><em>Drawing Interaction Diagrams</em>. Theoretically, a single
+interaction diagram should be drawn for each system function (check
+your system sequence diagram - SSD).  Since some system functions are
+trivial, I suggest the following practical technique.  Start drawing
+one interaction diagram <em>per use case</em>.  If, at some point, the
+diagram overflows to the next page, <em>split your interaction
+diagram</em> and draw one diagram <em>per system function</em>.</P>
+
+<P> <em>Applying Design Principles</em>.It is very critical to pay
+attention to the proper use of the design principles covered in
+Section 2.4 of <A HREF="../../books/SE/">class
+lecture notes</A>.  (Quick refresher: design principles include:
+<em>Expert Doer</em>, <em>High Cohesion</em>, <em>Low Coupling</em>.)
+Proper <em>responsibility assignment</em>, separation of
+<em>application logic</em> from <em>presentation</em> and
+<em>storage</em> tiers is of the utmost importance and will be given a
+great weight in grading the reports.  <em>It is important to document
+the alternative solutions that were considered in the design process,
+identify all the tradeoffs encountered and explain why the
+alternatives were abandoned.</em></P>
+
+<P>This report is the final "blueprint" before the construction phase
+comences.  Given your report, anyone who knows how to read UML
+diagrams should be able to implement the product in a straightforward
+manner.  This means that you need to clearly specify all details about
+the algorithms and data structures used, as well as about the target
+runtime environment.  This is by no means an exhaustive list!  Please
+include any other information that you feel the implementer may find
+useful.</P>
+
+<H3>2. &nbsp; Report Preparation</H3>
+
+<P> The guidelines remain the same as for <a
+href="report1.html#PREPARATION">Report #1</a>.</P>
+
+
+<H3>3. &nbsp; Grading</H3>
+
+<P>See also the <A HREF="projects.html#GRADING">grading policy</A> for
+the assigning the overall team grade vs. grades for the individual
+members.
+
+<p>The reports will be graded as follows: <br>
+(NOTE: Check also the detailed grading criteria for report #2, available <A HREF="report2_grading.pdf"><b>here</b></A>.)
+
+<TABLE BORDER>
+<TR><TD
+BGCOLOR="#CCFFFF" ROWSPAN="2">Aspect</TD>
+<TD COLSPAN="3"> <CENTER>Interaction Diagrams</CENTER> </TD><TD
+COLSPAN="2"><CENTER>Classes + Specs</CENTER></TD> <TD COLSPAN="5">
+<CENTER>Sys Arch & Design</CENTER> </TD></TD><TD ROWSPAN="2">Alg's<br>
+& data<br> struct </TD><TD COLSPAN="2"> <CENTER>User
+Interface</CENTER> <TD ROWSPAN="2">Plan<br> of<br> Wrk</TD> <TD
+ROWSPAN="2">Ref's</TD><TD ROWSPAN="2">Project<br>mgmt</TD>
+</TR>
+<TR><TD>Applicat.<br>of design<br> principles</TD><TD>UML<br>
+nota<br> tion</TD><TD>Prose<br> descr.<br>(#)</TD>
+<TD>Class<br> diag</TD><TD>Signa<br> tures</TD>
+<TD>Sty<br> les</TD><TD>Pckg<br> diag</TD><TD>Map<br>
+hard<br> ware</TD><TD>Data<br> base</TD><TD>other<br> ($)</TD>
+<TD>App<br> ear<br> ance</TD><TD>Prose<br> descr.<br> (+)</TD>
+</TR>
+<TR><TD
+BGCOLOR="#CCFFFF">Points</TD><TD> 20 </TD><TD> 5 </TD>
+<TD> 10 </TD><TD> 8 </TD><TD> 5 </TD><TD> 5 </TD><TD> 5
+</TD><TD> 2 </TD><TD> 5 </TD><TD> * 5 </TD><TD> * 4 </TD><TD> 5
+</TD><TD> 5 </TD><TD> 4 </TD><TD> 2 </TD> <TD> 10 </TD>
+</TR>
+<TR><TD
+BGCOLOR="#CCFFFF">Total<br> points</TD><TD COLSPAN="16">
+&nbsp;&nbsp;&nbsp;&nbsp; 100 </TD>
+</TR><TD COLSPAN="17">
+* <FONT SIZE=-1>Point numbers preceded with an asterisk will be graded
+only if applicable. Otherwise, these<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; points will be re-assigned
+to other sub-sections of Section 5 of this report: <em>System<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Architecture and System
+Design</em>.</FONT> <BR>
+(#) <FONT SIZE=-1> This refers to the narrative
+describing your interaction diagrams.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; State explicitly what
+design choices were made and provide the rationale for your
+choices.</FONT> <BR>
+($) <FONT SIZE=-1>Other design aspects, if applicable,
+given in the list above, such as network
+protocol, global<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+control flow, and hardware requirements.</FONT> <BR>
+(+) <FONT SIZE=-1> This refers to the narrative
+describing your user interface design.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  State explicitly what design
+choices were made and provide the  of rationale for your
+choices.</FONT>
+</TD>
+<TR>
+</TR>
+</TABLE>
+
+<P>See <A HREF="report1.html#EXTRA_EFFORT">Report #1</A> for
+explanation about the "Project Management" part of the grade. </P>
+
+<H3>4. &nbsp; Report Submission</H3>
+
+<P> Each team should submit only <em>one report</em> to the TA.  Bring
+the report to the <A HREF="index.html#TA">TA's office</A> on or before
+the due date. </P>
+
+<P> Please also hand in your <FONT color="ff0000"><b>graded report
+#1</b></FONT>, if it is currently with you. This will allow us to
+compare the progress and facilitate our grading process. </P>
+
+<P>Submission deadline: <B>5:00 p.m. on the due date</B>. </P>
+
+<HR>
+<P><ADDRESS>
+<I>Ivan Marsic <BR>
+Tue Mar  1 13:35:16 EST 2005</I>
+</ADDRESS>
+</BODY>
+</HTML>
